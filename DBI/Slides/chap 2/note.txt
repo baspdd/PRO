@@ -1,0 +1,7 @@
+- Key attribute			: thuộc tính khóa 
+- Non-key attribute		: thuộc tính phụ với các thành phần có thể thay đổi ( điểm  )
+- Multi-valued attribute	: đa giá trị
+- Derived- attribute		: thuộc tính suy diễn từ thuộc tính khác ( năm sinh -> tuổi )
+- Candidate key			: thành phần trong thuộc tính
+- Primary key			: thuộc tính khóa , không thể thay đổi ( vd id )
+- Foreign key

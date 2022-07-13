@@ -1,0 +1,37 @@
+
+* 4-5/73: Functional dependency : phụ thuộc hàm ( giống suy ra )
+
+- 6/73	: Super Key : tập thuộc tính chứa các key và các key thuộc super key
+
+- 7/73	: Armstrong’s Axioms: Let X, Y, Z, W are sets of attributes
+	+ Reflexivity	: X tập con Y , Y -> X
+	+ Augmentation	: X->Y, then XZ->YZ for any Z
+	+ Transitivity	: X->Y and Y->Z, then X->Z
+	+ Union/Combining : X->Y AND X->Z then X->YZ
+	+ Decomposition/Splitting : ngược lại cái trên
+	+ Pseudotransitivity :  X -> Y và WY -> Z then WX -> Z
+	+ Trivial FDs : FLD -> FD (FLD : FD left, bên phải là tập con của bên trái )
+
+- 8/73 	: tập S follow tập T khi mọi tp trong T thỏa mãn S
+	  equivalent khi 2 cái follow nhau
+	The Closure of Attributes : là tập được xác định từ tập mẹ
+	vd : S ={A->B, B->C, AD->E}  {AD}+={ABCD} , {A}+={AB}+={ABC}
+	 chỉ {A}+ là super key vì tối thiểu
+
+- 12/73	: Closing Sets of Functional Dependencies
+	+ T equivalent S -> t basis for S
+	+ T minimal basis S <-> t là basis for S và các tp không thể loại bỏ có 
+	format ( X+->Y ) 
+	vd : S = {A->B,B->C, AC->E,AD->F}   S'={A->B,B->C,A->E,AD->F}
+
+- 21/73 : Anomalies - dị thường
+		+ Redundancy :thông tin có thể lặp lại không cần thiết trong một số bộ
+		+ Update Anomalies : có thể thay đổi thông tin trong một bộ
+		+ Deletion Anomalies: Nếu một tập hợp các giá trị trở nên trống, có thể mất thông tin khác do tác dụng phụ
+- 22/73 : Decomposition : + {A1,..,An} = {B1,..,Bm} U {C1,..,Ck} 
+	sau khi phân rã có thể ko gộp lại như cũ
+
+
+
+		
+		
